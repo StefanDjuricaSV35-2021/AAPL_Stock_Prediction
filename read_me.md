@@ -32,8 +32,8 @@ Pratite sledeće korake kako biste uspešno pokrenuli projekat na vašem računa
 **a) Klonirajte repozitorijum:**
 Otvorite terminal ili Command Prompt i izvršite sledeću komandu:
 ```bash
-git clone [URL_VAŠEG_GITHUB_REPOZITORIJUMA]
-cd [NAZIV_REPOZITORIJUMA]
+git clone [https://github.com/StefanDjuricaSV35-2021/AAPL_Stock_Prediction.git]
+cd [AAPL_Stock_Prediction]
 ```
 
 **b) Kreirajte i aktivirajte virtualno okruženje (preporučeno):**
@@ -57,19 +57,22 @@ Sve potrebne biblioteke sa odgovarajućim verzijama su definisane u `requirement
 ```bash
 pip install -r requirements.txt
 ```
+Ako instalacija ne radi iz prve probajte ponovo nakon upgrade-ovanje pip-a
 
 ### 3. Pokretanje koda
 
 Kod se nalazi u Jupyter Notebook fajlu (`predvidjanje_akcija.ipynb`).
 
 1.  Uverite se da je vaše virtualno okruženje (`venv`) aktivirano.
-2.  Pokrenite Jupyter Notebook server iz terminala:
-    ```bash
-    jupyter notebook
-    ```
-3.  Otvoriće se nova kartica u vašem internet pregledaču. Pronađite i otvorite fajl `predvidjanje_akcija.ipynb` (ili kako god ste ga nazvali).
-4.  Da biste dobili čiste i reprodukovane rezultate, preporučuje se da pokrenete sve ćelije od početka do kraja. To možete uraditi tako što ćete iz menija izabrati:
-    **Kernel -> Restart & Run All**
+2.  Pokrenite python file predict_stocks.py pomocu komande:
+```bash
+python predict_stocks.py
+```
+
+Ako ne bude radilo moguce da nije updejtovan yfinance module koji se azurira pomocu sledece komande:
+```bash
+pip install --upgrade yfinance
+```
 
 ---
 
@@ -77,7 +80,8 @@ Kod se nalazi u Jupyter Notebook fajlu (`predvidjanje_akcija.ipynb`).
 
 ```
 .
-├── predvidjanje_akcija.ipynb   # Glavni Jupyter Notebook sa izvornim kodom
+├── projekat.ipynb              # Glavni Jupyter Notebook sa izvornim kodom
+├── predict_stocks.py           # Python skripta za lakse pokretanje koda
 ├── izvestaj.pdf                # Detaljan izveštaj o projektu
 ├── requirements.txt            # Lista potrebnih Python biblioteka
 └── README.md                   # Ovaj fajl

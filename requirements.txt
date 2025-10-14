@@ -1,0 +1,22 @@
+# Python 3.9+
+
+# Osnovne biblioteke za analizu podataka
+pandas==2.1.4
+numpy==1.26.4
+scikit-learn==1.3.2
+
+# Biblioteka za preuzimanje finansijskih podataka
+yfinance==0.2.37
+
+# Biblioteke za vizuelizaciju
+matplotlib==3.8.2
+seaborn==0.13.2
+
+# TensorFlow i Keras za neuronske mreže
+tensorflow==2.16.1
+
+# Biblioteka za optimizaciju hiperparametara
+keras-tuner==1.4.7
+
+# (Opciono, ako ste koristili) Biblioteka za tehničke indikatore
+# pandas_ta==0.3.14
